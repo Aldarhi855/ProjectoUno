@@ -113,7 +113,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>E:\Programas\Visual Studio\SFML-2.5.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-main-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-graphics-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -133,9 +133,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="NPC.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="NPC.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
